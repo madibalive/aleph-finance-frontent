@@ -1,0 +1,487 @@
+/* ==========================================================================
+   *Medium devices (1800 above)*
+   ========================================================================== */
+@media (min-width: 1800px) {
+}
+
+/* ==========================================================================
+     *Medium devices (tablets, 1800px and down)*
+     ========================================================================== */
+@media (max-width: 1800px) {
+  .tracker__top__left--list li {
+    padding: 25px;
+  }
+  .tracker__top__right--graph {
+    margin-left: 0;
+  }
+  .rewar__history--box {
+    padding: 20px;
+  }
+  .more__up {
+    right: 10px;
+    top: 46px;
+  }
+  .rewar__history--box h4 {
+    font-size: 28px;
+  }
+}
+
+/* ==========================================================================
+     *Medium devices (1550px and down)*
+     ========================================================================== */
+@media (max-width: 1600px) {
+  .more__up {
+    top: inherit;
+    bottom: 20px;
+  }
+  .tracker__top__left--list li h3 {
+    font-size: 32px;
+  }
+  .rewar__history--box h4 {
+    font-size: 24px;
+  }
+  .tracker__top__right--graph h3 {
+    position: static;
+  }
+  .portal__wraper {
+    padding-left: 290px;
+  }
+  .portal-img-listing li img {
+    width: 100%;
+  }
+  header h2 {
+    padding-left: 35px;
+  }
+
+  /* LIYA */
+}
+
+/* ==========================================================================
+     *Medium devices (tablets, 1320px and down)*
+     ========================================================================== */
+@media (max-width: 1400px) {
+  .tracker__top__right--box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .rewar__history--box {
+    width: 33%;
+    border-top: none;
+    border-left: 1px solid #242424;
+  }
+  .tracker__top__right--graph {
+    margin-top: 15px;
+  }
+
+  .page__heading {
+    top: inherit;
+    margin: 15px 0;
+    display: block;
+  }
+  .portal__wraper {
+    padding-top: 86px;
+  }
+
+  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
+  .followers h5 {
+    margin-right: 30px;
+  }
+  .NFT-heading-block h5:after {
+    right: -10px;
+  }
+  .NFT-item-content {
+    padding: 25px 15px;
+  }
+  .NFT-item-listing {
+    padding: 40px 25px;
+  }
+  .client-img-block {
+    margin-top: -100px;
+  }
+  .NFT-heading-block {
+    padding: 40px 15px;
+  }
+  .portal-img-listing {
+    padding: 30px 20px;
+  }
+  .NFT-networth h5 span {
+    font-size: 30px;
+    padding-left: 15px;
+  }
+  .header__search--input {
+    width: 220px;
+  }
+  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
+}
+
+/* ==========================================================================
+     *Medium devices (tablets, 1200px and down)*
+     ========================================================================== */
+@media (max-width: 1200px) {
+  .followers__following li {
+    padding: 0 10px;
+  }
+  .manage__wallet--address {
+    padding: 0 15px;
+  }
+  .header__search--input {
+    width: 190px;
+  }
+
+  .tracker__top__left--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .tracker__top__left--list li {
+    display: block;
+    width: 50%;
+    border-top: none;
+    border-left: 1px solid #373737;
+  }
+  .page__heading {
+    top: inherit;
+    margin: 15px 0;
+  }
+  .tracker__nodes--block .table {
+    width: 1400px;
+  }
+
+  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
+  .NFT-networth svg {
+    margin: 0;
+    margin-top: 15px;
+  }
+  .header-block-right .commen-btn:first-child {
+    margin: inherit;
+  }
+  .portal-img-listing ul {
+    flex-wrap: wrap;
+  }
+  .portal-img-listing li {
+    padding: 0 8px;
+    margin-bottom: 10px;
+    width: 20%;
+  }
+  .NFT-networth {
+    margin-top: 30px;
+  }
+  .primary__btn {
+    padding: 12px;
+    font-size: 13px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+  .followers__following li h5 {
+    font-size: 22px;
+  }
+  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
+}
+
+/* ==========================================================================
+     *Medium devices (tablets, 991px and down)*
+     ========================================================================== */
+@media (max-width: 991px) {
+  .logo {
+    margin-bottom: 5px;
+    display: block;
+  }
+  .manage__wallet--address .primary__btn {
+    font-size: 14px;
+  }
+  .followers__following {
+    margin-bottom: 15px;
+  }
+
+  a.menu-toggle {
+    display: block;
+    right: -44px;
+    border: 1px solid #e0a820;
+  }
+  .main__menu--bar {
+    top: 0;
+    left: -265px;
+    transition: all ease-out 0.2s;
+    border-radius: 0px;
+    background: #000000;
+  }
+  .main__menu--bar.expand {
+    left: 0;
+  }
+  .main__menu--bar.expand a.menu-toggle {
+    right: 0px;
+    z-index: 9;
+  }
+  .sidebar__menu {
+    height: 100vh;
+    padding: 20px 0;
+  }
+  .sidebar__menu > ul.menu-list > li > a:hover::before,
+  .sidebar__menu > ul.menu-list > li.active > a::before {
+    display: none;
+  }
+  .sidebar__menu > ul.menu-list > li > a:hover::after,
+  .sidebar__menu > ul.menu-list > li.active > a::after {
+    display: none;
+  }
+
+  .portal__header {
+    flex-direction: column;
+    position: relative;
+    padding: 15px;
+  }
+  .portal__header--right {
+    display: block;
+  }
+  .sidebar__menu > ul.menu-list > li > a > span.icon {
+    margin-right: 10px;
+  }
+  .sidebar__menu > ul.menu-list > li > a {
+    padding-left: 25px;
+  }
+  .sidebar__menu > ul.menu-list > li > ul {
+    margin-left: 65px;
+  }
+
+  .portal__wraper {
+    padding: 15px;
+  }
+  .page__heading {
+    text-align: center;
+    margin-top: 0;
+  }
+  .tracker__top__left--list li {
+    text-align: center;
+    padding: 20px;
+  }
+  .rewar__history--box {
+    text-align: center;
+  }
+  .tracker__top__right--graph h3 {
+    display: block;
+    text-align: center;
+  }
+  .sidebar__menu > ul.menu-list > li {
+    padding: 3px 0;
+  }
+
+  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
+  .header-sorting h6 {
+    font-size: 18px;
+    margin: auto 0;
+    font-weight: normal;
+  }
+  .header-sorting h6 b {
+    color: #fff;
+  }
+  .client-img-block {
+    margin: 0;
+  }
+  .NFT-heading-block {
+    padding: 40px 15px;
+  }
+  .NFT-heading-block h5 {
+    font-size: 16px;
+  }
+  .followers h5 span {
+    font-size: 20px;
+  }
+  .header-sorting h6 {
+    padding-bottom: 15px;
+  }
+  .header-sorting {
+    padding: 0 15px;
+  }
+  .NFT-networth h5 span {
+    font-size: 30px;
+  }
+  .NFT-item-listing {
+    padding: 35px 15px 10px 15px;
+  }
+  .NFT-networth h5 {
+    padding-left: 20px;
+  }
+  .NFT-networth {
+    margin-top: 20px;
+  }
+  .portal-img-listing {
+    padding: 20px 5px;
+  }
+  header h2 {
+    margin: auto;
+  }
+  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
+}
+
+/* ==========================================================================
+     *Small devices (landscape phones, less than 768px)*
+     ========================================================================== */
+@media (max-width: 767px) {
+  .portal__header {
+    padding: 15px;
+  }
+  .tracker__top__left--list li {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #373737;
+  }
+  .rewar__history--box {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #242424;
+  }
+  .tracker__nodes--block h3 {
+    font-size: 32px;
+  }
+  .manage__wallet--popup {
+    padding: 25px;
+  }
+  .manage__wallet--popup .carousel__button.is-close {
+    top: 10px;
+    right: 10px;
+  }
+  .manage__wallet--popup h3 {
+    font-size: 26px;
+  }
+  .add__address--link {
+    margin-bottom: 30px;
+  }
+
+  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
+  .portal-img-listing li img {
+    width: 100%;
+  }
+  .NFT-heading-block h3 {
+    font-size: 20px;
+  }
+  .client-content {
+    margin: auto 0;
+  }
+  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
+}
+
+/* ==========================================================================
+     *Extra small devices (portrait phones, less than 576px)*
+     ========================================================================== */
+@media (max-width: 575px) {
+  .header__right--ul {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .header__right--ul li {
+    display: block;
+    border: 1px solid rgb(42, 42, 42);
+  }
+  .header__notification--dropdown {
+    width: 100%;
+    top: 60px;
+  }
+  .noti__drop::after {
+    left: 20px;
+    top: 16px;
+    margin: auto;
+  }
+  .noti__drop {
+    padding: 10px 5px;
+  }
+  .header__search {
+    display: block;
+  }
+  .portal__header--right {
+    display: block;
+    width: 100%;
+  }
+  .header__search--input {
+    width: 100%;
+  }
+  .manage__wallet--address {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
+  .followers {
+    flex-wrap: wrap;
+  }
+  .portal-img-listing li {
+    width: 33%;
+  }
+  .header-sorting,
+  .form-flex {
+    display: block;
+  }
+  .NFT-item-listing .row {
+    width: 100%;
+    margin: 0;
+  }
+  .header-sorting .nice-select {
+    margin: auto;
+    margin-bottom: 10px;
+    float: inherit;
+  }
+  .header-sorting h6 {
+    text-align: center;
+  }
+  .NFT-item-listing {
+    padding: 35px 0 10px 0;
+  }
+  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
+}
+
+/* ==========================================================================
+     *Extra small devices (portrait phones, less than 480px)*
+     ========================================================================== */
+@media (max-width: 414px) {
+  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
+  .header-block-right .commen-btn:first-child {
+    margin: auto;
+  }
+  .NFT-heading-block .commen-btn {
+    margin: auto 0;
+    display: block;
+    width: 56%;
+    border-radius: 10px;
+    margin: 7px auto;
+  }
+  .commen-btn.round-box {
+    width: 44px;
+    border-radius: 50%;
+  }
+  .followers {
+    margin: 0;
+    width: 200px;
+    margin: auto;
+    margin-top: 0;
+  }
+  .followers .commen-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .header-block-right {
+    display: block;
+  }
+  .NFT-networth {
+    display: block;
+    text-align: center;
+  }
+  .NFT-networth h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .NFT-heading-block h6 {
+    text-align: center;
+  }
+  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
+}
