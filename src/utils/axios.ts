@@ -3,8 +3,8 @@ import axios from 'axios';
 // ----------------------------------------------------------------------
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:4000/',
-  // baseURL: 'https://bac22.herokuapp.com/',
+  // baseURL: 'http://localhost:4000/',
+  baseURL: 'https://alepbackend.herokuapp.com/',
   headers: {
     'Content-Type': 'application/json',
   },
