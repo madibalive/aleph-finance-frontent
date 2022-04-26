@@ -30,6 +30,7 @@ export default function Router() {
         { path: '/nft', element: <PageNft /> },
         { path: '/settings', element: <PageSettings /> },
         { path: '/profile', element: <PageProfile /> },
+
         {
           path: '/dashboard',
           children: [

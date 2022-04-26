@@ -44,7 +44,7 @@ export default function DashboardLayout() {
         minHeight: { lg: 1 },
       }}
     >
-      <DashboardHeader verticalLayout={true} onOpenSidebar={() => setOpen(true)} />
+      <DashboardHeader />
 
       <Navbar
         isOpenSidebar={open}

@@ -18,7 +18,6 @@ import Iconify from '../../../components/Iconify';
 import navConfig from './NavConfig';
 import NavbarAccount from './NavbarAccount';
 import NavSection from './section';
-// import CollapseButton from './CollapseButton';
 
 // ----------------------------------------------------------------------
 
@@ -46,14 +45,10 @@ export default function Navbar({ isOpenSidebar, onOpenSidebar, onCloseSidebar }:
 
   const isDesktop = useResponsive('up', 'lg');
 
-  // const { isCollapse, collapseClick, collapseHover, onToggleCollapse, onHoverEnter, onHoverLeave } =
-  //   useCollapseDrawer();
-
   useEffect(() => {
     if (isOpenSidebar) {
       onCloseSidebar();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const renderContent = (

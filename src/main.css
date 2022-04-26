@@ -152,7 +152,6 @@
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  /* background: url(owl.video.play.png) no-repeat; */
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -1996,7 +1995,7 @@ span.make__bg {
   border: none;
   display: block;
   border-radius: 4px;
-  /* background: url(/public/img/delete__icon.svg) no-repeat center center #101010; */
+  background: url(./assets/delete__icon.svg) no-repeat center center #101010;
   position: absolute;
   right: 0;
   top: 0;
@@ -2018,7 +2017,7 @@ span.make__bg {
   position: absolute;
   left: 0;
   top: -6px;
-  /* background: url(/img/add__address.svg) no-repeat left top; */
+  background: url(./assets/add__address.svg) no-repeat left top;
 }
 .add__address--link:hover {
   color: #ffffff;
@@ -2269,7 +2268,8 @@ a.menu-toggle.active span.line.b {
 
 .portal__wraper {
   display: block;
-  padding: 60px 15px 0 340px;
+  /* padding: 60px 15px 0 15px; */
+  padding: 0 15px 0 15px;
   position: relative;
 }
 .page__heading {
@@ -2547,6 +2547,7 @@ a.menu-toggle.active span.line.b {
 .table__second tr > td:last-child {
   border-right: 1px solid #7f704f !important;
 }
+
 .wallet__table--block .table thead tr th {
   width: 16.66% !important;
 }
@@ -2609,7 +2610,7 @@ font-family:"sofia-pro";
   width: 100%;
 }
 .NFT_item {
-  border-radius: 8px;
+  border-radius: 5px;
   position: relative;
   height: 100%;
   background: #101010;

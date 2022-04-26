@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Input, Slide, Button, InputAdornment, Box } from '@mui/material';
+import { Input, Slide, Button, InputAdornment, Box, ButtonUnstyled } from '@mui/material';
 // utils
 import { RootState, useDispatch, useSelector } from 'src/redux/store';
 import { useDialog } from 'src/hooks/useDialog';
@@ -58,9 +58,9 @@ export default function ManageAddress() {
   return (
     <>
       <Box className="manage__wallet--address">
-        <Button size="large" variant="contained" onClick={handleOpen} className="primary__btn">
+        <ButtonUnstyled onClick={handleOpen} className="primary__btn">
           Manage Wallet Address
-        </Button>
+        </ButtonUnstyled>
       </Box>
       <MultipleAddressInput open={open} onClose={handleClose} />
     </>

@@ -1,95 +1,89 @@
-import { noCase } from 'change-case';
+import { ClickAwayListener } from '@mui/material';
+import { Box } from '@mui/system';
 import { useState } from 'react';
-// @mui
-import {
-  Box,
-  List,
-  Badge,
-  Button,
-  Avatar,
-  Tooltip,
-  Divider,
-  Typography,
-  ListItemText,
-  ListSubheader,
-  ListItemAvatar,
-  ListItemButton,
-  IconButton,
-} from '@mui/material';
-// utils
-// _mock_
-import Iconify from '../../../components/Iconify';
-import Scrollbar from '../../../components/Scrollbar';
-import MenuPopover from '../../../components/MenuPopover';
-import { NotificationIcon } from 'src/icons/Notification';
 
 export default function NotificationsPopover() {
-  const [open, setOpen] = useState<HTMLElement | null>(null);
+  const [open, setOpen] = useState<boolean>(false);
 
-  const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setOpen(event.currentTarget);
+  const handleToggle = (event: React.MouseEvent<HTMLElement>) => {
+    setOpen(!open);
   };
-
   const handleClose = () => {
-    setOpen(null);
+    setOpen(false);
   };
-
+  const menuClass = `noti__drop${open ? ' active' : ''}`;
+  const notificationClass = `header__notification--dropdown${open ? ' open' : ''}`;
   return (
-    <>
-      <IconButton
-        color={open ? 'primary' : 'default'}
-        onClick={handleOpen}
-        sx={{ width: 40, height: 40 }}
-      >
-        <NotificationIcon />
-      </IconButton>
-
-      <MenuPopover
-        open={Boolean(open)}
-        anchorEl={open}
-        onClose={handleClose}
-        sx={{ width: 360, p: 0, mt: 1.5, ml: 0.75 }}
-      >
-        <Box sx={{ display: 'flex', alignItems: 'center', py: 2, px: 2.5 }}>
-          <Box sx={{ flexGrow: 1 }}>
-            <Typography variant="subtitle1">Notifications</Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              You have unread messages
-            </Typography>
-          </Box>
-        </Box>
-
-        <Divider sx={{ borderStyle: 'dashed' }} />
-
-        <Scrollbar sx={{ height: { xs: 340, sm: 'auto' } }}>
-          <List
-            disablePadding
-            subheader={
-              <ListSubheader disableSticky sx={{ py: 1, px: 2.5, typography: 'overline' }}>
-                Before that
-              </ListSubheader>
-            }
-          >
-            <ListItemButton
-              sx={{
-                py: 1.5,
-                px: 2.5,
-                mt: '1px',
-              }}
+    <ClickAwayListener onClickAway={handleClose}>
+      <ul className="header__right--ul">
+        <li className="header__notification">
+          <Box component="a" onClick={handleToggle} className={menuClass}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34.331"
+              height="40.723"
+              viewBox="0 0 34.331 40.723"
             >
-              <ListItemText primary="sample " />
-            </ListItemButton>
-          </List>
-        </Scrollbar>
-
-        <Divider sx={{ borderStyle: 'dashed' }} />
-
-        <Box sx={{ p: 1 }}>
-          <Button fullWidth disableRipple>
-            View All
-          </Button>
-        </Box>
-      </MenuPopover>
-    </>
+              <path
+                id="_59_Notifications_Alarm_Notification"
+                data-name="59 Notifications, Alarm, Notification"
+                d="M43.331,32.246a3.514,3.514,0,0,1-3.514,3.514H34.271a8.2,8.2,0,0,1-16.211,0H12.514a3.514,3.514,0,0,1,0-7.028V21.71c.009-8.6,3.907-14.352,12.48-14.966V2h2.343V6.744c8.574.614,12.472,6.371,12.48,14.966v7.022A3.514,3.514,0,0,1,43.331,32.246ZM14.856,28.732H37.475V21.71c0-7.763-3.546-12.682-11.309-12.682S14.856,13.947,14.856,21.71ZM31.9,35.76H20.426a5.857,5.857,0,0,0,11.479,0Zm9.084-3.514a1.171,1.171,0,0,0-1.171-1.171h-27.3a1.171,1.171,0,1,0,0,2.343h27.3A1.171,1.171,0,0,0,40.989,32.246Z"
+                transform="translate(-9 -2)"
+                fill="#fff"
+              />
+            </svg>
+          </Box>
+          <div className={notificationClass}>
+            <ul className="header__notification--list">
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <b>lorem ipsum</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </a>
+              </li>
+            </ul>
+            <a href="#" className="primary__btn">
+              View all
+            </a>
+          </div>
+        </li>
+      </ul>
+    </ClickAwayListener>
   );
 }

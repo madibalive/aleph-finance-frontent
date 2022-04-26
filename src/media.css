@@ -43,17 +43,15 @@
   .tracker__top__right--graph h3 {
     position: static;
   }
-  .portal__wraper {
+  /* .portal__wraper {
     padding-left: 290px;
-  }
+  } */
   .portal-img-listing li img {
     width: 100%;
   }
   header h2 {
     padding-left: 35px;
   }
-
-  /* LIYA */
 }
 
 /* ==========================================================================
@@ -185,6 +183,59 @@
   .followers__following li h5 {
     font-size: 22px;
   }
+  .client-img-block {
+    display: block;
+    text-align: center;
+  }
+  .client-img-block {
+    margin: 0;
+  }
+  .client-content {
+    margin-top: 15px;
+  }
+  .NFT-heading-block h6 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .followers {
+    margin: 0;
+    width: 345px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .header-block-right {
+    display: block;
+    width: 420px;
+    margin: auto;
+  }
+  .followers .commen-btn {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .NFT-networth {
+    display: block;
+    text-align: center;
+  }
+  .NFT-networth h5 {
+    padding-left: 0;
+  }
+  .NFT-networth h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .NFT-heading-block h5 {
+    font-size: 16px;
+  }
+  .NFT-heading-block svg {
+    width: 14px;
+  }
+  .NFT-heading-block .NFT-networth svg {
+    width: 75px;
+  }
+  .NFT-networth svg {
+    margin-top: 0;
+  }
   /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
 }
 
@@ -284,15 +335,6 @@
   .header-sorting h6 b {
     color: #fff;
   }
-  .client-img-block {
-    margin: 0;
-  }
-  .NFT-heading-block {
-    padding: 40px 15px;
-  }
-  .NFT-heading-block h5 {
-    font-size: 16px;
-  }
   .followers h5 span {
     font-size: 20px;
   }
@@ -308,9 +350,6 @@
   .NFT-item-listing {
     padding: 35px 15px 10px 15px;
   }
-  .NFT-networth h5 {
-    padding-left: 20px;
-  }
   .NFT-networth {
     margin-top: 20px;
   }
@@ -319,6 +358,17 @@
   }
   header h2 {
     margin: auto;
+  }
+  .NFT-heading-block {
+    padding: 40px 15px;
+    width: 420px;
+    margin: auto;
+  }
+  .header-block-right {
+    display: block;
+  }
+  .NFT-heading-block {
+    width: 100%;
   }
   /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
 }
@@ -414,6 +464,20 @@
   /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
   .followers {
     flex-wrap: wrap;
+    width: 67%;
+    justify-content: center;
+  }
+  .header-block-right {
+    width: 100%;
+  }
+  .NFT-heading-block .followers .commen-btn {
+    width: 100%;
+  }
+  .followers h5:nth-child(2):after {
+    display: none;
+  }
+  .followers h5:nth-child(2) {
+    margin-right: 0;
   }
   .portal-img-listing li {
     width: 33%;
@@ -437,21 +501,13 @@
   .NFT-item-listing {
     padding: 35px 0 10px 0;
   }
-  /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
-}
-
-/* ==========================================================================
-     *Extra small devices (portrait phones, less than 480px)*
-     ========================================================================== */
-@media (max-width: 414px) {
-  /*================================ 17-03-2022 LIYA NFT STYLES START=================================*/
   .header-block-right .commen-btn:first-child {
     margin: auto;
   }
   .NFT-heading-block .commen-btn {
     margin: auto 0;
     display: block;
-    width: 56%;
+    width: 67%;
     border-radius: 10px;
     margin: 7px auto;
   }
@@ -459,29 +515,6 @@
     width: 44px;
     border-radius: 50%;
   }
-  .followers {
-    margin: 0;
-    width: 200px;
-    margin: auto;
-    margin-top: 0;
-  }
-  .followers .commen-btn {
-    width: 100%;
-    text-align: center;
-  }
-  .header-block-right {
-    display: block;
-  }
-  .NFT-networth {
-    display: block;
-    text-align: center;
-  }
-  .NFT-networth h5 {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .NFT-heading-block h6 {
-    text-align: center;
-  }
+
   /*================================ 17-03-2022 LIYA NFT STYLES END=================================*/
 }

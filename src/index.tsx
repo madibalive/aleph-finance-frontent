@@ -9,8 +9,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 // Import Bootsrap
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap';
 
-import './index.css';
+import './main.css';
 import './media.css';
 
 import ReactDOM from 'react-dom';
