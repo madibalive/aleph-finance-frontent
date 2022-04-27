@@ -142,7 +142,7 @@ export default function NodesTable(props: any) {
                       </Box>
                     </StyledTableCell>
                     <StyledTableCell sx={{}}>{item.nodes}</StyledTableCell>
-                    <StyledTableCell sx={{}}>{item.balance}</StyledTableCell>
+                    {/* <StyledTableCell sx={{}}>{item.balance}</StyledTableCell> */}
                     <StyledTableCell sx={{}}>{parseFloat(item.rewards).toFixed(3)}</StyledTableCell>
 
                     {/* <StyledTableCell

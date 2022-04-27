@@ -15,7 +15,7 @@ const DashboardMetrics = ({ networth }: any) => {
                 <p>Net worth</p>
                 <h3>${getDisplayValue(networth)}</h3>
               </li>
-              <li>
+              {/* <li>
                 <span className="icon">
                   <img className="img-fluid" src="/img/total__climable--icon.svg" alt="" />
                 </span>
@@ -23,7 +23,7 @@ const DashboardMetrics = ({ networth }: any) => {
                 <h3>
                   $78,543.23 <span className="rating">3.7%</span>
                 </h3>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -455,9 +455,6 @@ export default function PageDashboard() {
                 </table>
               </div>
             </div> */}
-          <footer className="footer">
-            <p>© 2023 Aleph Finance</p>
-          </footer>
         </>
       )}
     </Page>

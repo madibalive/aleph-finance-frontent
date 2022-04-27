@@ -17,7 +17,14 @@ export default function NotificationsPopover() {
     <ClickAwayListener onClickAway={handleClose}>
       <ul className="header__right--ul">
         <li className="header__notification">
-          <Box component="a" onClick={handleToggle} className={menuClass}>
+          <Box
+            component="a"
+            sx={{
+              cursor: 'pointer',
+            }}
+            onClick={handleToggle}
+            className={menuClass}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34.331"

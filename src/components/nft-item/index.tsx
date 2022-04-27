@@ -5,7 +5,15 @@ const NftItem = ({ item, key }: any) => {
     <div key={key} className="col-xxl-3 col-xl-4 col-sm-6 NFT-item-box">
       <div className="NFT_item">
         <span>
-          <img src={item.collection.imgProfile} className="img-fluid" alt="" />
+          {item.collection?.imgProfile ? (
+            <img src={item.collection.imgProfile} className="img-fluid" alt="" />
+          ) : (
+            <img
+              src="https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_5.jpg"
+              className="img-fluid"
+              alt=""
+            />
+          )}
         </span>
         <div className="NFT-item-content">
           <div className="number-box">
@@ -30,7 +38,7 @@ const NftItem = ({ item, key }: any) => {
             {item.collectionName}
             <span> {item.collectionName}</span>
           </h6>
-          <div className="NFT-duration">
+          {/* <div className="NFT-duration">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +125,7 @@ const NftItem = ({ item, key }: any) => {
               </svg>
               <span>7 days left</span>
             </div>
-          </div>
+          </div> */}
           <div className="pricing-box">
             <h5>
               Floor price

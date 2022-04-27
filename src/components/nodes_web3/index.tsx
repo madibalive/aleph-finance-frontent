@@ -1,9 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Box, Paper, Stack, Button, Typography, Card, CardContent } from '@mui/material';
-import { Close } from '@mui/icons-material';
-import { sample } from 'lodash';
-import { useDialog } from '../../hooks/useDialog';
-import { useMounted } from '../../hooks/useMounted';
 import NodesTable from './Table';
 import BigNumber from 'bignumber.js';
 
@@ -18,10 +14,6 @@ const columns: any = [
   },
 
   {
-    field: 'Balance',
-    headerName: 'Yeild p/d',
-  },
-  {
     field: 'Nodes',
     headerName: 'Claimable',
   },
@@ -29,23 +21,11 @@ const columns: any = [
     field: 'Nodes',
     headerName: '',
   },
-  // {
-  //   field: 'Nodes',
-  //   headerName: 'Token Price',
-  // },
-  // {
-  //   field: 'Nodes',
-  //   headerName: 'ROI',
-  // },
-  // {
-  //   field: 'Nodes',
-  //   headerName: 'Total Claimable (USD)',
-  // },
 ];
 // filter data where value is greater than 0
 
 const applyFilter = (data: any[]) => {
-  return data.filter((t) => new BigNumber(t.balanceUSD || t.amount || 0).isGreaterThanOrEqualTo(1));
+  return data.filter((t) => new BigNumber(t.rewards || 0).isGreaterThanOrEqualTo(1));
 };
 
 const NodesWeb3TableComponent = (props: any) => {
@@ -56,6 +36,11 @@ const NodesWeb3TableComponent = (props: any) => {
     setselectedId(id);
   };
   if (!props.nodes) return <></>;
+
+  let filteredData = applyFilter(props.nodes);
+  filteredData = filteredData.sort(function (a: any, b: any) {
+    return b.rewards - a.rewards;
+  });
 
   return (
     <Paper
@@ -73,7 +58,7 @@ const NodesWeb3TableComponent = (props: any) => {
         <NodesTable
           loading={isLoading}
           onRowClick={handleRowClick}
-          data={props.nodes}
+          data={filteredData}
           columns={columns}
         />
       </Box>

@@ -1,12 +1,6 @@
 // components
 import SvgIconStyle from '../../../components/SvgIconStyle';
 
-// ----------------------------------------------------------------------
-
-// const getIcon = (name: string) => (
-//   <SvgIconStyle src={`/icons/${name}.svg`} sx={{ width: 1, height: 1 }} />
-// );
-
 const getIcon = (name: string) => (
   <SvgIconStyle src={`/img/navbar/${name}.svg`} sx={{ width: '100%', height: '100%' }} />
 );
@@ -33,8 +27,8 @@ const navConfig = [
         ],
       },
       { title: 'NFTs', path: '/nft', icon: ICONS.nft },
-      { title: 'Profile', path: '/profile', icon: ICONS.profile },
-      { title: 'Settings', path: '/settings', icon: ICONS.settings },
+      // { title: 'Profile', path: '/profile', icon: ICONS.profile },
+      // { title: 'Settings', path: '/settings', icon: ICONS.settings },
     ],
   },
 ];

@@ -12,8 +12,8 @@ export default function BuyNodeDailog({ open, onClose }: any) {
     <Backdrop
       sx={{
         color: '#fff',
-        backgroundColor: 'rgba(30, 30, 30, 0.8)',
-        zIndex: (theme) => theme.zIndex.drawer + 1001,
+        background: 'rgba(30, 30, 30, 0.8) !important',
+        zIndex: (theme) => theme.zIndex.drawer + 1999,
       }}
       open={open}
       onClick={handleOnClose}

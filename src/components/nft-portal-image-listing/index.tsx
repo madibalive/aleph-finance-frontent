@@ -1,8 +1,10 @@
+import { take } from 'lodash';
+
 const NftPortalImageListings = ({ nfts }: any) => {
   return (
     <div className="portal-img-listing">
       <ul>
-        {nfts.map((item: any, index: any) => (
+        {take(nfts, 9).map((item: any, index: any) => (
           <li key={index}>
             <img
               src={item.collection.imgProfile}

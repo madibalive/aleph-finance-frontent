@@ -19,7 +19,7 @@ const NftHeadingBlock = ({ avatar, addresses, nft_total }: any) => {
               />
             </span>
             <div className="client-content">
-              <h3>Adam.eth</h3>
+              {/* <h3>Adam.eth</h3> */}
               {Object.values(addresses).map((item: any, index: any) => (
                 <a key={index} href="">
                   <span className="copy-text">
