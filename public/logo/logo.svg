@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="Group_1133" data-name="Group 1133" transform="translate(-1127 -2096)">
+    <g id="Ellipse_61" data-name="Ellipse 61" transform="translate(1127 2096)" fill="#161616" stroke="#cdac61" stroke-width="1">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+    </g>
+    <path id="Shape_1_copy" data-name="Shape 1 copy" d="M9.613,12.992,4.835,6.28c-.88.473-2.12,1.97-1.434,6.712H.1S-.913,5.4,3.519,4.432L.372.011h3.8L8.818,6.541C9.64,5.913,10.569,4.275,9.962,0H13.2s.961,6.4-3.144,8.283l3.352,4.709Z" transform="translate(1134.818 2103.818)" fill="#cdac61"/>
+  </g>
+</svg>

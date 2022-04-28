@@ -13,7 +13,7 @@ const initialState: any = {
   error: false,
   networth: 0,
   nft_total: 0,
-  avatar: 'https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_5.jpg',
+  avatar: '/logo/logo.svg',
   groupedProtocols: [],
   wallet_total: 0,
   protocol_total: 0,
@@ -69,7 +69,7 @@ const slice = createSlice({
       state.error = false;
       state.networth = 0;
       state.nft_total = 0;
-      state.avatar = 'https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_5.jpg';
+      state.avatar = '/logo/logo.svg';
       state.groupedProtocols = [];
       state.wallet_total = 0;
       state.protocol_total = 0;

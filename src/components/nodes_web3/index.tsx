@@ -5,17 +5,29 @@ import BigNumber from 'bignumber.js';
 
 const columns: any = [
   {
-    field: 'Network',
+    field: 'Assets',
     headerName: 'Assets',
   },
   {
-    field: 'Rewards',
+    field: 'nodes',
     headerName: 'Node Total',
   },
 
+  // {
+  //   field: 'Yeild p/d',
+  //   headerName: 'Yeild p/d',
+  // },
   {
-    field: 'Nodes',
+    field: 'Claimable',
     headerName: 'Claimable',
+  },
+  {
+    field: 'price',
+    headerName: 'Token Price',
+  },
+  {
+    field: 'totalClaimable',
+    headerName: 'Total Claimable',
   },
   {
     field: 'Nodes',
@@ -39,7 +51,7 @@ const NodesWeb3TableComponent = (props: any) => {
 
   let filteredData = applyFilter(props.nodes);
   filteredData = filteredData.sort(function (a: any, b: any) {
-    return b.rewards - a.rewards;
+    return a.network.localeCompare(b.network);
   });
 
   return (

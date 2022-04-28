@@ -8,6 +8,7 @@ import { HEADER, NAVBAR } from '../../../config';
 import ManageAddress from './ManageAddress';
 import HeaderSearch from './HeaderSearch';
 import NotificationsPopover from './NotificationsPopover';
+import Logo from 'src/components/Logo';
 
 // ----------------------------------------------------------------------
 
@@ -17,9 +18,9 @@ export default function DashboardHeader({}) {
   return (
     <header className="portal__header">
       <div className="logo">
-        <a href="#">
-          <img className="img-fluid" src="/img/logo.png" alt="" />
-        </a>
+        <Logo />
+        <div className="veriticalBar" />
+        <h4>Aleph Finance</h4>
       </div>
       <div className="portal__header--right">
         <HeaderSearch />

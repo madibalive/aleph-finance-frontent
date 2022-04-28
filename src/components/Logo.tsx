@@ -12,7 +12,7 @@ interface Props extends BoxProps {
 export default function Logo({ disabledLink = false, sx }: Props) {
   const theme = useTheme();
 
-  const logo = <Box sx={{ width: 40, height: 40, ...sx }} component="img" src="/logo/logo.png" />;
+  const logo = <Box sx={{ width: 40, height: 40, ...sx }} component="img" src="/logo/logo.svg" />;
 
   if (disabledLink) {
     return <>{logo}</>;

@@ -8,11 +8,7 @@ const NftItem = ({ item, key }: any) => {
           {item.collection?.imgProfile ? (
             <img src={item.collection.imgProfile} className="img-fluid" alt="" />
           ) : (
-            <img
-              src="https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_5.jpg"
-              className="img-fluid"
-              alt=""
-            />
+            <img src="/logo/logo.svg" className="img-fluid" alt="" />
           )}
         </span>
         <div className="NFT-item-content">

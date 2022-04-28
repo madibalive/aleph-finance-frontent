@@ -22,7 +22,7 @@ export default function NavbarAccount({}: Props) {
           }}
           src={portfolio.avatar}
         />
-        <Typography variant="h3">Adam.eth</Typography>
+        {/* <Typography variant="h3">Adam.eth</Typography> */}
       </Stack>
     </Link>
   );

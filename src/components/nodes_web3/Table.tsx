@@ -28,9 +28,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
-    backgroundColor: '#171717',
-  },
   // hide last border
   '&:last-child td, &:last-child th': {
     border: 0,
@@ -84,6 +81,7 @@ export default function NodesTable(props: any) {
                       '&:last-child td': {
                         border: 0,
                       },
+                      borderTop: '1px solid #3e3e3e;',
                     }}
                     // hover
                     key={index}
@@ -144,8 +142,8 @@ export default function NodesTable(props: any) {
                     <StyledTableCell sx={{}}>{item.nodes}</StyledTableCell>
                     {/* <StyledTableCell sx={{}}>{item.balance}</StyledTableCell> */}
                     <StyledTableCell sx={{}}>{parseFloat(item.rewards).toFixed(3)}</StyledTableCell>
-
-                    {/* <StyledTableCell
+                    {/* 
+                    <StyledTableCell
                       sx={{
                         width: '15%',
                       }}
@@ -160,13 +158,14 @@ export default function NodesTable(props: any) {
                           }}
                         />
                       </span>
-                    </StyledTableCell>
-                    <StyledTableCell sx={{}}>$4207.54 </StyledTableCell>
-                    <StyledTableCell sx={{}}>
+                    </StyledTableCell> */}
+                    <StyledTableCell sx={{}}>${parseFloat(item.price).toFixed(3)}</StyledTableCell>
+                    {/* <StyledTableCell sx={{}}>
                       <span className="roi green__text">6%</span>
+                    </StyledTableCell> */}
+                    <StyledTableCell sx={{}}>
+                      ${getDisplayValue(item.totalClaimable)}
                     </StyledTableCell>
-                    <StyledTableCell sx={{}}>$4207.54 </StyledTableCell>
-                  */}
                   </TableRow>
                 );
               })}
