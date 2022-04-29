@@ -1792,21 +1792,10 @@ span.make__bg {
 
 .portal__header .logo {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 100%;
-  /* padding-top: 8px; */
 }
-.portal__header .logo h4 {
-  margin-left: 8px;
-  color: #6fbc4f;
-  font-weight: 400;
-}
-
-.verticalBar {
-  width: 1px;
-  height: 100%;
-  background: #6fbc4f;
+.portal__header .logo h6 {
+  color: #d6b565;
+  font-weight: 600;
 }
 
 .portal__header--right {

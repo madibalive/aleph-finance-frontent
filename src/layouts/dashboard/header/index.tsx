@@ -1,6 +1,5 @@
 // @mui
-import { styled } from '@mui/material/styles';
-import { Box, Stack, Button, AppBar, Toolbar } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
 // hooks
 import { HEADER, NAVBAR } from '../../../config';
 // components
@@ -17,11 +16,19 @@ import Logo from 'src/components/Logo';
 export default function DashboardHeader({}) {
   return (
     <header className="portal__header">
-      <div className="logo">
+      <Stack className="logo" direction="row" alignItems="center" justifyContent="center">
         <Logo />
-        <div className="veriticalBar" />
-        <h4>Aleph Finance</h4>
-      </div>
+        <Box
+          sx={{
+            marginLeft: '5px',
+            marginRight: '5px',
+            width: '1px',
+            height: '30px',
+            background: '#d6b565',
+          }}
+        />
+        <Typography variant="h6">Aleph Finance</Typography>
+      </Stack>
       <div className="portal__header--right">
         <HeaderSearch />
         <ManageAddress />

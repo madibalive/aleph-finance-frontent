@@ -33,8 +33,6 @@ const MainStyle = styled('main')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function DashboardLayout() {
-  const isDesktop = useResponsive('up', 'lg');
-
   const [open, setOpen] = useState(false);
 
   return (
