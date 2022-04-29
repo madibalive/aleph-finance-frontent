@@ -1,21 +1,13 @@
 import { ChangeEvent, Fragment, useCallback, useEffect, useState } from 'react';
 import { FieldArray, Form, useFormik, getIn, FormikProvider, Field } from 'formik';
 import * as Yup from 'yup';
-import {
-  Box,
-  Button,
-  Dialog,
-  IconButton,
-  Stack,
-  TextField,
-  InputBase,
-  Backdrop,
-  ButtonUnstyled,
-} from '@mui/material';
+import { Box, Button, Dialog, InputBase, Backdrop, ButtonUnstyled } from '@mui/material';
 import { RootState, useDispatch, useSelector } from '../../redux/store';
 import { AddressSetAll } from '../../redux/slices/address';
 import { uuidv4 } from 'src/utils/generateId';
 import useResponsive from 'src/hooks/useResponsive';
+import { CloseIcon } from 'src/icons/Close';
+import { CloseOutlined } from '@mui/icons-material';
 
 const validationSchema = Yup.object().shape({
   addresses: Yup.array().of(
@@ -150,17 +142,19 @@ export default function MultipleAddressInput({ open, onClose }: any) {
                 )}
               </FieldArray>
 
-              <Box>
-                <ButtonUnstyled className="primary__btn" onClick={() => handleSubmit()}>
+              <Box
+                sx={{
+                  width: '100%',
+                }}
+              >
+                <ButtonUnstyled className="primary__btn fullwidth" onClick={() => handleSubmit()}>
                   Submit
                 </ButtonUnstyled>
               </Box>
             </Form>
           </FormikProvider>
           <button className="carousel__button is-close" onClick={onClose}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M20 20L4 4m16 0L4 20"></path>
-            </svg>
+            <CloseOutlined />
           </button>
         </div>
       </Box>

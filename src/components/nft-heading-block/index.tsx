@@ -43,7 +43,7 @@ const NftHeadingBlock = ({ avatar, addresses, nft_total }: any) => {
               ))}
             </div>
           </div>
-
+          {/* 
           <h6>
             Active Since <span>October 2021</span>{' '}
           </h6>
@@ -66,9 +66,9 @@ const NftHeadingBlock = ({ avatar, addresses, nft_total }: any) => {
               </svg>
               Unranked
             </a>
-          </div>
+          </div> */}
         </div>
-        <div className="col-xl-6">
+        {/* <div className="col-xl-6">
           <div className="header-block-right">
             <a href="" className="commen-btn">
               <svg
@@ -193,7 +193,7 @@ const NftHeadingBlock = ({ avatar, addresses, nft_total }: any) => {
               </h5>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -30,9 +30,9 @@ export default function DashboardHeader({}) {
         <Typography variant="h6">Aleph Finance</Typography>
       </Stack>
       <div className="portal__header--right">
-        <HeaderSearch />
+        {/* <HeaderSearch /> */}
         <ManageAddress />
-        <NotificationsPopover />
+        {/* <NotificationsPopover /> */}
       </div>
     </header>
   );

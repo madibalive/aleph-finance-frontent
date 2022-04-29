@@ -5,8 +5,16 @@ const NftItem = ({ item, key }: any) => {
     <div key={key} className="col-xxl-3 col-xl-4 col-sm-6 NFT-item-box">
       <div className="NFT_item">
         <span>
-          {item.collection?.imgProfile ? (
-            <img src={item.collection.imgProfile} className="img-fluid" alt="" />
+          {item.collection?.img ? (
+            <img
+              style={{
+                height: '300px',
+                objectFit: 'cover',
+              }}
+              src={item.collection.img}
+              className="img-fluid"
+              alt=""
+            />
           ) : (
             <img src="/logo/logo.svg" className="img-fluid" alt="" />
           )}

@@ -36,8 +36,8 @@ export default function Router() {
           children: [
             { element: <Navigate to="/dashboard/summary" replace />, index: true },
             { path: '/dashboard/summary', element: <PageDashboard /> },
-            { path: '/dashboard/nodes', element: <PageDashboard /> },
-            { path: '/dashboard/wallets', element: <PageDashboard /> },
+            { path: '/dashboard/nodes', element: <PageNodes /> },
+            { path: '/dashboard/wallets', element: <PageWallets /> },
           ],
         },
       ],
@@ -56,6 +56,8 @@ export default function Router() {
 
 // Dashboard
 const PageDashboard = Loadable(lazy(() => import('../pages/PageDashboard')));
+const PageNodes = Loadable(lazy(() => import('../pages/PageNodes')));
+const PageWallets = Loadable(lazy(() => import('../pages/PageWallets')));
 const PageNft = Loadable(lazy(() => import('../pages/PageNft')));
 const PageProfile = Loadable(lazy(() => import('../pages/PageProfile')));
 const PageSettings = Loadable(lazy(() => import('../pages/PageSettings')));
