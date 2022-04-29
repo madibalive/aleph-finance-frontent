@@ -19,7 +19,7 @@ export default function PageDashboard() {
     portfolio;
 
   return (
-    <Page title="Dashboard">
+    <Page title="Nodes">
       {isLoading && <SkeletonLoad />}
       {success && !isLoading && (
         <>
