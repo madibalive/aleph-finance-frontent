@@ -38,7 +38,9 @@ export default function DashboardLayout() {
   return (
     <Box
       sx={{
+        position: 'relative',
         display: { lg: 'flex' },
+        background: `url(/img/bgTriangles.svg)`,
         minHeight: { lg: 1 },
       }}
     >

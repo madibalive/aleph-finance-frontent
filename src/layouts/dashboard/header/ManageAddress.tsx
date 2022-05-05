@@ -58,7 +58,13 @@ export default function ManageAddress() {
   return (
     <>
       <Box className="manage__wallet--address">
-        <ButtonUnstyled onClick={handleOpen} className="primary__btn">
+        <ButtonUnstyled
+          sx={{
+            fontSize: 12,
+          }}
+          onClick={handleOpen}
+          className="primary__btn"
+        >
           Manage Wallet Address
         </ButtonUnstyled>
       </Box>

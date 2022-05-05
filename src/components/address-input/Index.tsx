@@ -147,7 +147,13 @@ export default function MultipleAddressInput({ open, onClose }: any) {
                   width: '100%',
                 }}
               >
-                <ButtonUnstyled className="primary__btn fullwidth" onClick={() => handleSubmit()}>
+                <ButtonUnstyled
+                  sx={{
+                    fontSize: 12,
+                  }}
+                  className="primary__btn fullwidth"
+                  onClick={() => handleSubmit()}
+                >
                   Submit
                 </ButtonUnstyled>
               </Box>

@@ -10,17 +10,22 @@ export default function Input(theme: Theme) {
           '&.Mui-disabled': {
             '& svg': { color: theme.palette.text.disabled },
           },
+          fontSize: 12,
         },
         input: {
           '&::placeholder': {
             opacity: 1,
             color: theme.palette.text.disabled,
+            fontSize: 12,
           },
         },
       },
     },
     MuiInput: {
       styleOverrides: {
+        root: {
+          fontSize: 12,
+        },
         underline: {
           '&:before': {
             borderBottomColor: theme.palette.grey[500_56],

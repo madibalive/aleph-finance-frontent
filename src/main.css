@@ -1610,7 +1610,7 @@ body {
   background: #000000;
   margin: 0px;
   padding: 0px;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 500;
   color: #6d6e72;
@@ -1648,13 +1648,16 @@ h6 {
   font-weight: 700;
 }
 h2 {
-  font-size: 60px;
+  font-size: 26px;
+  /* font-size: 60px; */
 }
 h3 {
-  font-size: 36px;
+  font-size: 22px;
+  /* font-size: 36px; */
 }
 h4 {
-  font-size: 30px;
+  font-size: 16px;
+  /* font-size: 30px; */
 }
 a {
   color: #018aff;
@@ -1710,7 +1713,7 @@ span.make__bg {
 }
 .primary__btn {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
   position: relative;
@@ -1771,7 +1774,7 @@ span.make__bg {
 /* ===================== Dashboard ===================== */
 .portal__header {
   display: block;
-  background: #000000;
+  /* background: #000000; */
   padding: 24px 30px 24px 15px;
   position: fixed;
   top: 0;
@@ -1978,7 +1981,7 @@ span.make__bg {
 }
 
 .manage__wallet--popup {
-  max-width: 587px;
+  /* max-width: 587px; */
   width: 100%;
   background: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -2016,7 +2019,7 @@ span.make__bg {
   display: inline-block;
   padding-left: 45px;
   position: relative;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 55px;
@@ -2036,7 +2039,7 @@ span.make__bg {
 }
 .manage__wallet--popup .primary__btn {
   padding: 15px 20px 20px 20px;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 .fancybox__content :focus:not(.carousel__button.is-close) {
   outline: none;
@@ -2288,7 +2291,7 @@ a.menu-toggle.active span.line.b {
   display: inline-block;
   position: relative;
   z-index: 9;
-  top: -35px;
+  top: -30px;
 }
 .page__heading h3 {
   margin-bottom: 0;
@@ -2324,12 +2327,12 @@ a.menu-toggle.active span.line.b {
 }
 .tracker__top__left--list li p {
   color: #a2a2a2;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 700;
   margin-bottom: 3px;
 }
 .tracker__top__left--list li h3 {
-  font-size: 39px;
+  /* font-size: 39px; */
 }
 .rating {
   display: inline-block;
@@ -2364,7 +2367,7 @@ a.menu-toggle.active span.line.b {
 }
 .rewar__history--box p {
   color: #acacac;
-  font-size: 15px;
+  /* font-size: 15px; */
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -2401,7 +2404,8 @@ a.menu-toggle.active span.line.b {
 .tracker__nodes--block h3 {
   padding: 15px 20px 0px 20px;
   color: #ffffff;
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-weight: 700;
   margin-bottom: 0;
 }
 .tracker__nodes--block .table {
@@ -2410,7 +2414,7 @@ a.menu-toggle.active span.line.b {
 .tracker__nodes--block .table thead tr th {
   border: none;
   color: #979797;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 400;
   padding: 15px 20px;
 }
@@ -2446,7 +2450,7 @@ a.menu-toggle.active span.line.b {
   border: none;
   border-top: 1px solid #3e3e3e;
   color: #ffffff;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 600;
   padding: 17px 20px;
 }
@@ -2572,12 +2576,11 @@ a.menu-toggle.active span.line.b {
 }
 
 .footer {
-  display: block;
   padding: 20px 0;
 }
 .footer p {
   color: #979797;
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 700;
 }
 
@@ -2635,7 +2638,7 @@ font-family:"sofia-pro";
 }
 .NFT-item-content {
   color: #77736a;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: normal;
   display: block;
 }
@@ -2647,7 +2650,7 @@ font-family:"sofia-pro";
 }
 .NFT-item-content h6 span {
   color: #ffffff;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 600;
   display: block;
 }
@@ -2659,7 +2662,7 @@ font-family:"sofia-pro";
 }
 .pricing-box h5 span {
   color: #ffffff;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 600;
   display: block;
 }
@@ -2690,7 +2693,7 @@ font-family:"sofia-pro";
   margin-right: 5px;
 }
 .duration-box {
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #979797;
 }
 .NFT-heading-block h3 {
@@ -2852,7 +2855,7 @@ span.copy-text:hover {
   margin-bottom: 20px;
 }
 header h2 {
-  font-size: 36px;
+  font-size: 28px;
   color: #fff;
   text-align: left;
   margin-right: auto;

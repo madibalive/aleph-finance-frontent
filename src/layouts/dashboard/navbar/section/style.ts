@@ -27,6 +27,7 @@ export const ListItemStyleSub = styled(ListItemButton, {
   shouldForwardProp: (prop) => prop !== 'activeRoot' && prop !== 'activeSub' && prop !== 'subItem',
 })<ListItemStyleProps>(({ activeRoot, activeSub, subItem, theme }) => ({
   // ...theme.typography.fontWeightBold,
+  ...theme.typography.h6,
   position: 'relative',
   height: NAVBAR.DASHBOARD_ITEM_ROOT_HEIGHT,
   textTransform: 'capitalize',
@@ -60,7 +61,7 @@ export const ListItemStyleSub = styled(ListItemButton, {
 export const ListItemStyle = styled(ListItemButton, {
   shouldForwardProp: (prop) => prop !== 'activeRoot' && prop !== 'activeSub' && prop !== 'subItem',
 })<ListItemStyleProps>(({ activeRoot, activeSub, subItem, theme }) => ({
-  ...theme.typography.h5,
+  ...theme.typography.h6,
   position: 'relative',
   height: NAVBAR.DASHBOARD_ITEM_ROOT_HEIGHT,
   textTransform: 'capitalize',
@@ -92,6 +93,7 @@ export const ListItemTextStyle = styled(ListItemText, {
   shouldForwardProp: (prop) => prop !== 'isCollapse',
 })<ListItemTextStyleProps>(({ isCollapse, theme }) => ({
   whiteSpace: 'nowrap',
+  fontSize: theme.typography.h6.fontSize,
   transition: theme.transitions.create(['width', 'opacity'], {
     duration: theme.transitions.duration.shorter,
   }),

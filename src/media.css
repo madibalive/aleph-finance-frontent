@@ -22,7 +22,7 @@
     top: 46px;
   }
   .rewar__history--box h4 {
-    font-size: 28px;
+    /* font-size: 28px; */
   }
 }
 
@@ -35,10 +35,10 @@
     bottom: 20px;
   }
   .tracker__top__left--list li h3 {
-    font-size: 32px;
+    /* font-size: 32px; */
   }
   .rewar__history--box h4 {
-    font-size: 24px;
+    /* font-size: 24px; */
   }
   .tracker__top__right--graph h3 {
     position: static;
@@ -181,7 +181,7 @@
     font-size: 30px;
   }
   .followers__following li h5 {
-    font-size: 22px;
+    /* font-size: 22px; */
   }
   .client-img-block {
     display: block;
@@ -248,7 +248,7 @@
     display: block;
   }
   .manage__wallet--address .primary__btn {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   .followers__following {
     margin-bottom: 15px;
@@ -336,7 +336,7 @@
     color: #fff;
   }
   .followers h5 span {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .header-sorting h6 {
     padding-bottom: 15px;
@@ -345,7 +345,7 @@
     padding: 0 15px;
   }
   .NFT-networth h5 span {
-    font-size: 30px;
+    /* font-size: 30px; */
   }
   .NFT-item-listing {
     padding: 35px 15px 10px 15px;
@@ -391,7 +391,7 @@
     border-top: 1px solid #242424;
   }
   .tracker__nodes--block h3 {
-    font-size: 32px;
+    /* font-size: 32px; */
   }
   .manage__wallet--popup {
     padding: 25px;
@@ -402,6 +402,7 @@
   }
   .manage__wallet--popup h3 {
     font-size: 26px;
+    /* font-size: 26px;/ */
   }
   .add__address--link {
     margin-bottom: 30px;

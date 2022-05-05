@@ -9,13 +9,26 @@ import {
   TableRow,
   Typography,
   Link,
+  tableCellClasses,
 } from '@mui/material';
+import { styled } from '@mui/material/styles';
+
 import Scrollbar from '../Scrollbar';
 import Spinner from '../SkeletonLoad';
 
 export default function WalletsTable(props: any) {
   const { data, columns, loading, onRowClick, ...other } = props;
 
+  const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+      // backgroundColor: theme.palette.common.black,
+      // color: theme.palette.common.white,
+    },
+    [`&.${tableCellClasses.body}`]: {
+      fontSize: 12,
+      fontWeight: 'bold',
+    },
+  }));
   return (
     <div {...other}>
       <Scrollbar>
@@ -64,34 +77,34 @@ export default function WalletsTable(props: any) {
                     hover
                     key={item.id}
                   >
-                    <TableCell
+                    <StyledTableCell
                       sx={{
                         color: 'text.secondary',
                       }}
                     >
                       {item.name}
-                    </TableCell>
-                    <TableCell
+                    </StyledTableCell>
+                    <StyledTableCell
                       sx={{
                         color: 'text.secondary',
                       }}
                     >
                       {item.balance}
-                    </TableCell>
-                    <TableCell
+                    </StyledTableCell>
+                    <StyledTableCell
                       sx={{
                         color: 'text.secondary',
                       }}
                     >
                       {item.price}
-                    </TableCell>
-                    <TableCell
+                    </StyledTableCell>
+                    <StyledTableCell
                       sx={{
                         color: 'primary.main',
                       }}
                     >
                       {item.value}
-                    </TableCell>
+                    </StyledTableCell>
                   </TableRow>
                 );
               })}

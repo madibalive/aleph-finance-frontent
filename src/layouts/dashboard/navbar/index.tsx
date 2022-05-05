@@ -209,7 +209,7 @@ export default function Navbar({ isOpenSidebar, onOpenSidebar, onCloseSidebar }:
                 height: `calc(100% - ${HEADER.DASHBOARD_DESKTOP_HEIGHT})`,
                 overflowX: 'hidden',
                 top: HEADER.DASHBOARD_DESKTOP_HEIGHT,
-                bgcolor: 'background.default',
+                bgcolor: 'transparent',
                 transition: (theme) =>
                   theme.transitions.create('width', {
                     duration: theme.transitions.duration.standard,
