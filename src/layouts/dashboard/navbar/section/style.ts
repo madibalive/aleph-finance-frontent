@@ -27,7 +27,6 @@ export const ListItemStyleSub = styled(ListItemButton, {
   shouldForwardProp: (prop) => prop !== 'activeRoot' && prop !== 'activeSub' && prop !== 'subItem',
 })<ListItemStyleProps>(({ activeRoot, activeSub, subItem, theme }) => ({
   // ...theme.typography.fontWeightBold,
-  ...theme.typography.h6,
   position: 'relative',
   height: NAVBAR.DASHBOARD_ITEM_ROOT_HEIGHT,
   textTransform: 'capitalize',
@@ -65,7 +64,7 @@ export const ListItemStyle = styled(ListItemButton, {
   position: 'relative',
   height: NAVBAR.DASHBOARD_ITEM_ROOT_HEIGHT,
   textTransform: 'capitalize',
-  padding: theme.spacing(4),
+  padding: theme.spacing(3),
   // paddingRight: theme.spacing(1.5),
   // marginBottom: theme.spacing(2),
   color: theme.palette.common.white,

@@ -25,7 +25,7 @@ export default function WalletsTable(props: any) {
       // color: theme.palette.common.white,
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: 12,
+      fontSize: 14,
       fontWeight: 'bold',
     },
   }));

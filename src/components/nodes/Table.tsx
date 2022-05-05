@@ -23,7 +23,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     // color: theme.palette.common.white,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: 'bold',
   },
 }));
@@ -133,7 +133,7 @@ export default function NodesTable(props: any) {
                         >
                           <Typography
                             sx={{
-                              fontSize: 12,
+                              fontSize: 14,
                               fontWeight: 'bold',
                               color: 'common.white',
                             }}

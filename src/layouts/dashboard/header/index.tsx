@@ -1,5 +1,5 @@
 // @mui
-import { Box, Stack, Typography } from '@mui/material';
+import { alpha, Box, Stack, Typography } from '@mui/material';
 // hooks
 import { HEADER, NAVBAR } from '../../../config';
 // components
@@ -8,14 +8,27 @@ import ManageAddress from './ManageAddress';
 import HeaderSearch from './HeaderSearch';
 import NotificationsPopover from './NotificationsPopover';
 import Logo from 'src/components/Logo';
+import useOffSetTop from 'src/hooks/useOffSetTop';
 
 // ----------------------------------------------------------------------
 
 // ----------------------------------------------------------------------
 
 export default function DashboardHeader({}) {
+  const isOffset = useOffSetTop(100);
+
   return (
-    <header className="portal__header">
+    <Box
+      className="portal__header"
+      sx={{
+        ...(isOffset && {
+          backdropFilter: 'blur(6px)',
+          WebkitBackdropFilter: 'blur(6px)', // Fix on Mobile
+          backgroundColor: (theme) => alpha(theme.palette.background.default, 0.72),
+          height: { md: 88 - 16 },
+        }),
+      }}
+    >
       <Stack className="logo" direction="row" alignItems="center" justifyContent="center">
         <Logo />
         <Box
@@ -34,6 +47,6 @@ export default function DashboardHeader({}) {
         <ManageAddress />
         {/* <NotificationsPopover /> */}
       </div>
-    </header>
+    </Box>
   );
 }

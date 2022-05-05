@@ -1648,11 +1648,11 @@ h6 {
   font-weight: 700;
 }
 h2 {
-  font-size: 26px;
+  font-size: 24px;
   /* font-size: 60px; */
 }
 h3 {
-  font-size: 22px;
+  font-size: 18px;
   /* font-size: 36px; */
 }
 h4 {
@@ -1981,7 +1981,8 @@ span.make__bg {
 }
 
 .manage__wallet--popup {
-  /* max-width: 587px; */
+  max-width: 487px;
+  align-self: center;
   width: 100%;
   background: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1997,7 +1998,7 @@ span.make__bg {
 }
 .manage__wallet--input {
   width: 100%;
-  height: 56px;
+  height: 38px;
   border-radius: 4px;
   background: #101010;
   border: none;
@@ -2005,8 +2006,8 @@ span.make__bg {
   color: #ffffff;
 }
 .manage__wallet--delete {
-  width: 56px;
-  height: 56px;
+  width: 38px;
+  height: 38px;
   border: none;
   display: block;
   border-radius: 4px;
@@ -2019,15 +2020,15 @@ span.make__bg {
   display: inline-block;
   padding-left: 45px;
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 .add__address--link::before {
   content: '';
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   display: block;
   position: absolute;
   left: 0;
@@ -2038,7 +2039,6 @@ span.make__bg {
   color: #ffffff;
 }
 .manage__wallet--popup .primary__btn {
-  padding: 15px 20px 20px 20px;
   /* font-size: 20px; */
 }
 .fancybox__content :focus:not(.carousel__button.is-close) {

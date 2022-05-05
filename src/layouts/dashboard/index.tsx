@@ -40,7 +40,6 @@ export default function DashboardLayout() {
       sx={{
         position: 'relative',
         display: { lg: 'flex' },
-        background: `url(/img/bgTriangles.svg)`,
         minHeight: { lg: 1 },
       }}
     >

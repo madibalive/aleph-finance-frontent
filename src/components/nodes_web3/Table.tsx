@@ -129,7 +129,7 @@ export default function NodesTable(props: any) {
                         >
                           <Typography
                             sx={{
-                              fontSize: 16,
+                              fontSize: 14,
                               fontWeight: 'bold',
                               color: 'common.white',
                             }}
