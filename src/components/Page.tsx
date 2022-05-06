@@ -18,14 +18,12 @@ const Page = forwardRef<HTMLDivElement, Props>(({ children, title = '', meta, ..
       {meta}
     </Helmet>
 
-    <Box ref={ref} {...other}>
-      <section className="portal__wraper">
-        <div className="page__heading">
-          <h2>{title}</h2>
-        </div>
-        {children}
-      </section>
-    </Box>
+    {/* <Box ref={ref} {...other}> */}
+    <div className="page__heading">
+      <h2>{title}</h2>
+    </div>
+    {children}
+    {/* </Box> */}
   </>
 ));
 

@@ -43,9 +43,9 @@
   .tracker__top__right--graph h3 {
     position: static;
   }
-  /* .portal__wraper {
-    padding-left: 290px;
-  } */
+  .portal__wraper {
+    padding-left: 295px;
+  }
   .portal-img-listing li img {
     width: 100%;
   }

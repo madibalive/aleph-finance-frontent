@@ -33,8 +33,6 @@ const MainStyle = styled('main')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function DashboardLayout() {
-  const [open, setOpen] = useState(false);
-
   return (
     <Box
       sx={{
@@ -44,17 +42,26 @@ export default function DashboardLayout() {
       }}
     >
       <DashboardHeader />
-
-      <Navbar
-        isOpenSidebar={open}
-        onOpenSidebar={() => setOpen(true)}
-        onCloseSidebar={() => setOpen(false)}
-      />
-
-      <MainStyle>
+      <Box
+        sx={{
+          position: 'relative',
+        }}
+      >
+        <Navbar />
+        <Box
+          className="portal__wraper"
+          sx={{
+            mr: { lg: 4 },
+          }}
+        >
+          <Outlet />
+          <Footer />
+        </Box>
+      </Box>
+      {/* <MainStyle>
         <Outlet />
         <Footer />
-      </MainStyle>
+      </MainStyle> */}
     </Box>
   );
 }

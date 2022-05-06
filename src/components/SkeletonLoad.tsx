@@ -8,6 +8,7 @@ export default function SkeletonLoad() {
       spacing={3}
       sx={{
         pt: 3,
+        width: '100%',
       }}
     >
       <Grid item xs={12} md={12} lg={12}>

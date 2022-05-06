@@ -60,7 +60,7 @@ export default function ManageAddress() {
       <Box className="manage__wallet--address">
         <ButtonUnstyled
           sx={{
-            fontSize: 12,
+            fontSize: 10,
           }}
           onClick={handleOpen}
           className="primary__btn"

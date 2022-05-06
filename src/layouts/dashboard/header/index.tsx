@@ -27,6 +27,7 @@ export default function DashboardHeader({}) {
           backgroundColor: (theme) => alpha(theme.palette.background.default, 0.72),
           height: { md: 88 - 16 },
         }),
+        px: { md: 4 },
       }}
     >
       <Stack className="logo" direction="row" alignItems="center" justifyContent="center">
