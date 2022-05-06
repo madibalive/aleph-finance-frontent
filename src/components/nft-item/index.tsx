@@ -8,7 +8,7 @@ const NftItem = ({ item, key }: any) => {
           {item.collection?.img ? (
             <img
               style={{
-                height: '300px',
+                height: '240px',
                 objectFit: 'cover',
               }}
               src={item.collection.img}

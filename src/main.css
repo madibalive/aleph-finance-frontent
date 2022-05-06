@@ -2450,7 +2450,8 @@ font-family:"sofia-pro";
   margin-bottom: 24px;
 }
 .NFT-item-content {
-  padding: 25px 27px;
+  /* padding: 25px 27px; */
+  padding: 18px 22px;
 }
 .NFT-item-content {
   color: #77736a;
